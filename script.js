@@ -1,0 +1,17 @@
+// login button function
+
+document.getElementById("loginButton").addEventListener("click",function(){
+    const mobileNumber = 1711641273
+    const pinNumber = 1234
+    const mobileNumberValue = document.getElementById("mobile-number").value
+    const mobileNumberValueConverted = parseInt(mobileNumberValue)
+
+    const pinNumberValue = document.getElementById("pin-number").value
+    const pinNumberValueConverted = parseInt(pinNumberValue)
+    if(mobileNumberValueConverted === mobileNumber && pinNumberValueConverted === pinNumber){
+        window.location.href="./home.html"
+    }
+    else{
+        alert("Invalid Mobile Number and PIN")
+    }
+})
