@@ -1,5 +1,11 @@
 
 const validPin = 1234
+const addMoneyBtn = document.getElementById("addMoneyBtn")
+const addMoneySection = document.getElementById("add-money-parent")
+
+addMoneyBtn.addEventListener("click",()=>{
+    addMoneySection.classList.toggle("hidden")
+})
 
 document.getElementById("add-money-btn").addEventListener("click",function(){
 
